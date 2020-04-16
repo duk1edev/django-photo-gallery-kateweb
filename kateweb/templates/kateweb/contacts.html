@@ -1,0 +1,37 @@
+{% extends 'kateweb/main-layout.html' %}
+{% load static %}
+
+{% block main_section %}
+    <main class='main-contacts'>
+      <div class="container contacts-block mt-5 mb-5">
+        <div class="row featurette d-flex">
+              <div class="col-md-7 order-md-2  align-items-center contacts">
+                <h2 class="featurette-heading contacts-block-h2">KateFriday</h2>
+                <h3><span class="text-muted">Engaged in all types of shooting.<br>For questions, recording and cooperation write:</span></h3>
+                <hr>
+                <h3>Telephone: +7-961-995-03-85</h3>
+                <h3>Mail: <a href="katya0318@gmail.com">katya0318@gmail.com</a></h3>
+                <h3><span class="text-muted">Social media:</span></h3>
+                <div class='wrapper mt-5 mb-5'>
+                  <ul>
+                    <li class="instagram"><a href="https://instagram.com/phfriday" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="telegram"><a href="https://t.me/phfriday" target="_blank"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="whatsapp"><a href="https://wa.me/79619950385" target="_blank"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="vk"><a href="https://vk.com/ph_friday" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+                <hr>
+                <div>
+                  <h3>Open for cooperation with modeling agencies, makeup artists, stylists, designers, etc.</h3>
+                </div>
+              </div>
+              <div class="col-md-5 order-md-1 text-center">
+                <img class="img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="{% static 'kateweb/img/contacts-image.jpg' %}" data-holder-rendered="true" style="width: 333px; height: 500px;">
+              </div>
+            </div>
+      </div>
+    </main>
+{% endblock %}
+
+{% block footer %}
+{% endblock%}

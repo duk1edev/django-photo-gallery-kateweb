@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap');
+/*preloader*/
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('img/animation/91.svg') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  /* background: silver; */
+  font-family: 'Montserrat', sans-serif!important;
+  /* height: 2000px; */
+}
+header {
+  width: 80%;
+  margin-left: 10%;
+  /* background: black; */
+  /* background: url('img/line.png'); */
+  /* background-size: 100%; */
+  /* border-radius: 5px; */
+
+  position:fixed;
+  z-index:9999;
+}
+/*Other header*/
+.header-contact {
+  width: 100%!important;
+  margin-top: 0px!important;
+  margin-left: 0;
+  position: fixed;
+  line-height: 0px;
+  background: white;
+  opacity: 1;
+  top:0;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(10,10,10,0.3);
+  -moz-box-shadow: 0px 3px 4px 0px rgba(10,10,10,0.3);
+  box-shadow: 0px 3px 4px 0px rgba(10,10,10,0.3);
+}
+.header-contact nav {
+  margin-bottom: 0!important;
+}
+.photo-main {
+  margin-top: 100px;
+}
+.album-detail {
+  margin-top: 70px;
+}
+.gallery-div {
+  margin-top: 50px;
+}
+.process-div {
+  margin-top: 80px;
+}
+.navigation{
+  color: black!important;
+  background: #fff; /* Цвет фона */
+  padding: 5px; /* Поля вокруг текста */
+  opacity: 0.85;
+}
+.a-logo {
+  height: 100%;
+  width: 30%;
+  margin-left: 15%;
+}
+.logo{
+  height: 100%;
+  height: 200px;
+}
+.logo-desc{
+  width: 100%;
+  font-size: 25px;
+}
+.logo-desc-a {
+  color: black;
+}
+.logo-desc-a:hover {
+  color: black;
+  text-decoration: none;
+}
+.logo-desc-2{
+  width: 100%;
+  font-size: 25px;
+}
+.logo-desc-2-a {
+  color: black;
+}
+.logo-desc-2-a:hover {
+  color: black;
+  text-decoration: none;
+}
+/*Switch language*/
+.language{
+  text-align: right;
+  text-transform: uppercase;
+  width: 40px;
+  color: black;
+}
+.language a{
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  font-size: 12px;
+  color: black;
+}
+.language-a {
+  padding-right: 18px;
+}
+.main-h1 {
+    font-size: 40px!important;
+}
+.main-h2-a{
+    font-size: 20px;
+    color: black;
+}
+.main-h2-a:hover {
+    font-size: 21px;
+    color: black;
+}
+
+/*Album*/
+.gallery-row {
+  width: 100%;
+}
+.album-div {
+  padding: 10px;
+  transition: .5s all;
+  height:100%;
+}
+.album-div:hover {
+  -webkit-box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+  transform: scale(1.01);
+}
+.card-title {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.album-link {
+  color: #847d7d;
+  text-decoration: none;
+}
+.album-link:hover {
+  color: black;
+  text-decoration: none;
+}
+.card-action-link {
+  color: #b2a9a9;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.card-action-link:hover {
+  color: black;
+  text-decoration: none;
+}
+/*Images in albums*/
+.image-in-album {
+  height: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+/*js header controls*/
+.width_full{
+  width: 100%!important;
+  margin-top: 0px;
+  margin-left: 0px;
+  background: white;
+  opacity: 0.95;
+  margin-left: -15px;
+  /* height: 100px; */
+}
+/*Главная картинка*/
+.main-view {
+  background-image: url('img/main-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+/*Гифки*/
+.main-animation{
+  /* height: 60%; */
+}
+.jumbotron{
+  padding-top: 0px!important;
+  padding-top: 0px!important;
+}
+
+.gifs {
+  width: 100%;
+  height: 100%;
+  transition: 0.5 all;
+}
+/**/
+.dropdown{
+  color: black;
+}
+/*Кнопки меню ------------------------------------------------*/
+.navbar-toggler {
+  background: black;
+}
+.menu-btn {
+  width: 100px;
+  height: 40px;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+  font-size: 16px;
+  padding-top: 11px!important;
+}
+.svg1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.svg1 .rect1 {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke:black;
+  stroke-width:3px;
+  stroke-dasharray: 10px 80px 20px 20px 20px 80px 20px 20px;
+  transition: .5s all;
+}
+.menu-btn:hover .rect1{
+  stroke:black;
+  stroke-width:3px;
+  /* stroke-dasharray: 10px 80px 20px 20px 20px 80px 20px 20px; */
+  stroke-dasharray: 80px 0px 40px 0px 80px 0;
+  /* transform: scale(1.2); */
+}
+/*Slider*/
+.slider {
+  margin-top: 2px;
+}
+/*slider albums*/
+.albums {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blog .carousel-indicators {
+  bottom: -40px;
+
+}
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    /* background: #a3a3a3; */
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+background: #707070;
+}
+/**/
+.blog-carousel-control-left {
+  margin-left: -80px;
+}
+/*Contacts*/
+.main-contacts {
+  margin-top: 100px;
+  background: white;
+}
+.contacts-block-h2 {
+  width: 100%
+}
+.wrapper{
+  color: black;
+}
+.wrapper ul {
+  list-style: none;
+}
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #484848;
+  display: inline-flex;
+}
+
+.wrapper ul li .fa{
+  color: #484848;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover.instagram,
+.wrapper ul li:hover.telegram,
+.wrapper ul li:hover.whatsapp,
+.wrapper ul li:hover.vk {
+  border: 5px solid #FCBD9E;
+  box-shadow: 0 0 15px #FCBD9E;
+  transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-instagram,
+.wrapper ul li:hover .fa-telegram,
+.wrapper ul li:hover .fa-whatsapp,
+.wrapper ul li:hover .fa-vk {
+  color: #FCBD9E;
+  text-shadow: 0 0 15px #FCBD9E;
+  transition: all 0.5s ease;
+}
+
+/
+/*Процесс*/
+.process-images-list{
+    list-style: none;
+}
+.process-images-list ul{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 0px;
+}
+.process-images-list ul > li:not(:last-child){
+  height: 130px;
+  margin-bottom: 5px;
+}
+.row-retouch{
+  width:80%;
+  margin-left: 10%;
+}
+.back-arrow{
+  color: black;
+}
+.back-arrow:hover{
+  color: black;
+  /* text-decoration: none; */
+}
+.carousel-control {
+    background: none!important;
+}
+/*albums card*/
+.album-card-image {
+    width: 100%;
+}
+.dpg-album-image, .album-card-image
+{
+  width: 100%;
+  height: 100%;
+}
+/* media queries */
+@media screen and (max-width: 640px){
+  .wrapper {
+      width: 350px;
+  }
+  .wrapper ul li{
+      margin-top: 10px;
+  }
+  .wrapper ul li.google{
+      margin-left: 60px;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+{   header {
+        width:100%;
+        margin-left: -15px;
+    }
+    .navbar-brand{
+        margin-top: 10px;
+        height: 180px;
+        width: 200px;
+    }
+    .logo {
+        height:100%;
+        width: 100%;
+    }
+    #navbar{
+      margin-bottom: 0;
+
+    }
+    .width_full{
+      width: 100%!important;
+      margin-top: 0px;
+      margin-left: 0px;
+      background: white;
+      opacity: 0.9;
+      margin-left: -15px;
+    }
+    .main-view {
+        height: 25vh;
+    }
+   .align-items-end {
+        align-items: flex-start!important;
+    }
+    .logo-desc{
+        font-size: 13px!important;
+        width:50%;
+    }
+    .logo-desc-2{
+      width: 50%;
+      font-size: 12px!important;
+    }
+    .navbar-collapse{
+        width:100%;
+        margin-right: 0px!important;
+        margin-left: 0px!important;
+    }
+    .nav-item {
+        width:100%;
+        margin-bottom: 5px;
+        padding-left: 40%;
+    }
+    .main-h1 {
+        font-size: 24px!important;
+    }
+    .main-h3 {
+         font-size: 14px!important;
+    }
+    .row-gifs {
+        /* background:white; */
+    }
+    .row-gifs div{
+        width:33%;
+        margin-bottom: 5px;
+    }
+    .wrapper {
+      width: 100%;
+    }
+    .wrapper ul{
+        padding: 0;
+    }
+    .wrapper ul li {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 10px;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 5px solid #484848;
+    }
+    .wrapper ul li.google{
+      margin-left: 10px;
+  }
+  /*Process*/
+  .process-div h2{
+    font-size: 16px;
+  }
+  .main-photo {
+    text-align: center!important;
+    padding-left: 0;
+  }
+  .process-images-list{
+    width: 100%!important;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .process-images-list h3{
+    font-size: 14px;
+  }
+  .two-photos-name{
+    width: 300px;
+  }
+  .two-photos-name h3{
+    font-size: 14px;
+  }
+  .two-photos-div {
+    width: 100%!important;
+    text-align: left;
+  }
+  .two-photos-div img {
+    width: 85px!important;
+    height: 125px!important;
+  }
+  .col-retouch img{
+    width:65px!important;
+    height:95px!important;
+  }
+
+
+  .process-img ul{
+
+  }
+  .process-images-ul li{
+    display: inline!important;
+  }
+  /*Albums*/
+  .card-title{
+    font-size: 10px;
+  }
+  .card-action-link{
+    display: none;
+  }
+  /**/
+  .dpg-album-image
+  {
+    width: 100%;
+    height: 100%;
+  }
+  /*language*/
+  .language{
+    margin-left: 48%;
+  }
+  /*contacts*/
+  .contacts h3{
+    font-size: 14px;
+  }
+  .main-contacts {
+    margin-top: 50px;
+  }
+}
+
+@media only screen
+    and (min-device-width: 375px)
+    and (min-device-height: 812px)
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: portrait) {
+      .main-view {
+          height: 20vh;
+      }
+}
+/*iphone6*/
+
+@media only screen
+    and (min-device-width: 414px)
+    and (min-device-height: 896px)
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      .main-view {
+          height: 20vh;
+      }
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1){
+  .main-view {
+          height: 25vh;
+      }
+
+}

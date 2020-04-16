@@ -1,0 +1,94 @@
+{% load static %}
+<!-- {% load i18n %} -->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'kateweb/main.css' %}"> {% block css %}{% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>{{ title }}</title>
+</head>
+<body>
+  <div id="page-preloader"><span class="spinner"></span></div>
+
+{% block header %}
+<header class="align-items-end header-contact">
+    <nav class="navbar navbar-expand-lg navbar-dark navigation text-dark py-3">
+    <div class="container">
+      <p class="logo-desc-2 mt-2"><a href="{% url 'home' %}" class="logo-desc-2-a">KateFriday Photographer</a></p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end align-self-end" id="navbarsExample07">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-dark menu-btn" href="{% url 'process' %}"><span>Process</span>
+              <svg class="svg1">
+                <rect class="rect1"></rect>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark menu-btn" href="{% url 'gallery' %}">Photos
+              <svg class="svg1">
+                <rect class="rect1"></rect>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark menu-btn" href="{% url 'contacts' %}">Contacts
+              <svg class="svg1">
+                <rect class="rect1"></rect>
+              </svg>
+            </a>
+          </li>
+          <li class="language row row-cols-2">
+            <a href="#" class='language-a' >en</a>
+            <a href="#">pl</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+{% endblock %}
+
+
+  {% block main_section %}
+  {% endblock %}
+
+
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+ {% block footer %}
+ <hr>
+     <footer class="page-footer font-small cyan darken-3">
+       <!-- Footer Elements -->
+       <div class="footer-copyright text-center py-3">
+         <a href="/">©KateFriday</a>
+         <div class='wrapper mt-5 mb-5'>
+           <ul>
+             <li class="instagram"><a href="https://instagram.com/phfriday" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+             <li class="telegram"><a href="https://t.me/phfriday" target="_blank"><i class="fa fa-telegram fa-2x" aria-hidden="true"></i></a></li>
+             <li class="whatsapp"><a href="https://wa.me/79619950385" target="_blank"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+             <li class="vk"><a href="https://vk.com/ph_friday" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
+           </ul>
+         </div>
+       </div>
+     </footer>
+ {% endblock %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="{% static 'kateweb/js/main.js' %}"></script> {% block js %}{% endblock %}
+</body>
+</html>

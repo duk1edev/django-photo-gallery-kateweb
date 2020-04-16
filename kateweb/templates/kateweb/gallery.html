@@ -1,0 +1,28 @@
+{% extends 'kateweb/main-layout.html' %}
+
+{% block main_section %}
+<main role="main photo-main">
+<div class="album bg-light">
+        <div class="container gallery-div">
+          <h3 class='text-center'>Albums of photos where you can rate my photos</h3>
+            <div class="row gallery-row">
+                {% for album in albums %}
+                <div class="col-xs-4 col-md-4 bordered album-div mb-2">
+                    <a href="{% url 'album-detail' album.slug  %}" class='album-link'>
+                        <div class="card-image">
+                            <img src="{{ album.thumb.url }}" alt="{{ album.title }}" class="responsive-img album-card-image" />
+                        </div>
+                    </a>
+                    <div class="card-content">
+                        <h3 class="card-title">{{ album.title }}</h3>
+                    </div>
+                    <div class="card-action">
+                        <a href="{% url 'album-detail' album.slug  %}" class='card-action-link'>More Images</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+</div>
+</main>
+{% endblock %}
